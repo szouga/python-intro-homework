@@ -10,14 +10,14 @@
 # Got it: 7
 # Hint: You'll need try/except to handle non-numeric input — or you can check str.isdigit().
 
-counter = 0
 
 while True:
     try:
         user_number = int(input("Enter a positive number: "))
         if user_number <= 0:
             print("Error numeric value not positive. Try again.")
-            user_number = int(input("Enter a positive number: "))
+            #user_number = int(input("Enter a positive number: "))
+            
         else:
             print(f"A positive number!: {user_number}")
             break
@@ -27,4 +27,3 @@ while True:
         print("   ⬇️    ⬇️")
         print("   ➕   ➖")
         
-    counter += 1
