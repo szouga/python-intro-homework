@@ -52,7 +52,7 @@
                         if found:
                             print(f"Your number, {numbers[i]}, was found at index: {found_index}")
                         else:
-                            print(f"Number not found, index: {found_index}")
+                            print(f"Number not found")
                         
                     elif user_input == 4:
                         swapped = True

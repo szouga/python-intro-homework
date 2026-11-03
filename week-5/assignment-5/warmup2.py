@@ -11,11 +11,11 @@
 # Hint: You'll need try/except to handle non-numeric input — or you can check str.isdigit().
 
 counter = 0
+
 while True:
     try:
         user_number = int(input("Enter a positive number: "))
-        
-        if user_number < 0:
+        if user_number <= 0:
             print("Error numeric value not positive. Try again.")
             user_number = int(input("Enter a positive number: "))
         else:
