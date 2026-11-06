@@ -27,7 +27,7 @@ def search(numbers, target):
 
 def bubble_sort(numbers):
     bubble_sort_list = []
-    index = 0
+    
     for i in numbers:
         bubble_sort_list.append(i)
     swapped = True
@@ -39,10 +39,10 @@ def bubble_sort(numbers):
                 bubble_sort_list[i], bubble_sort_list[i + 1] = bubble_sort_list[i + 1], bubble_sort_list[i]
     
                 swapped = True
-    index += 1
+
 
     return bubble_sort_list
-    #print(numbers)
+    
     
     
 def check_option(userchoice, numbers):
