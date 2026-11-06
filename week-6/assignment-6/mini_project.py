@@ -6,7 +6,7 @@
             if numbers[j] < numbers[min_index]:
                 min_index = j
         numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
-    return f"The minimum number is {numbers[0]}"
+    return numbers[0]
     
 def find_max(numbers):
     for i in range(len(numbers)):
@@ -15,7 +15,7 @@ def find_max(numbers):
             if numbers[j] > numbers[max_index]:
                 max_index = j
         numbers[i], numbers[max_index] = numbers[max_index], numbers[i]
-    return f"The maximum number is {numbers[0]}"
+    return numbers[0]
     
 def search(numbers, target):
     index = -1
@@ -135,9 +135,9 @@ def main():
                             ## If target is None, it means this means user chose option 1, 2, 4, or 5
                             #and nothing this script should not run
                     elif user_input == 2:
-                        print(check_option(user_input, numberslist))
+                        print(f"The maximum number is {check_option(user_input, numberslist)}")
                     elif user_input == 1:
-                        print(check_option(user_input, numberslist))
+                        print(f"The minimum number is {check_option(user_input, numberslist)}")
                     
                                 
                             
