@@ -8,5 +8,5 @@ def greet(name, greeting="Hello"):
 
 greet("Elphaba")
 greet("Elphaba", "Sweet Oz")
-greet("Elphaba")
+greet("Elphaba", greeting="")
 

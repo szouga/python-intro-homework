@@ -5,7 +5,7 @@
         for j in range(i + 1, len(numbers)):
             if numbers[j] < numbers[min_index]:
                 min_index = j
-            numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
+        numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
     return f"The minimum number is {numbers[0]}"
     
 def find_max(numbers):
