@@ -13,10 +13,12 @@ parent_path = os.path.abspath(os.path.join(script_dir, ".."))
 #create directory to data folder
 data_path = os.path.abspath(os.path.join(parent_path, "data"))
 
+expenses_path = os.path.abspath(os.path.join(data_path, "expenses.csv"))
 if os.path.exists(data_path):
     print("expenses.csv found.")
 else:
     print("expenses.csv not found.")
+    exit()
 
 #number two
 expenses_path = os.path.abspath(os.path.join(data_path, "expenses.csv"))
