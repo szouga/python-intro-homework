@@ -14,7 +14,7 @@ parent_path = os.path.abspath(os.path.join(script_dir, ".."))
 data_path = os.path.abspath(os.path.join(parent_path, "data"))
 
 expenses_path = os.path.abspath(os.path.join(data_path, "expenses.csv"))
-if os.path.exists(data_path):
+if os.path.exists(expenses_path):
     print("expenses.csv found.")
 else:
     print("expenses.csv not found.")
@@ -24,7 +24,7 @@ else:
 expenses_path = os.path.abspath(os.path.join(data_path, "expenses.csv"))
 #print(expenses_path)
 
-food_report_path = os.path.abspath(os.path.join(data_path, "food_report.txt"))
+food_report_path = os.path.abspath(os.path.join(script_dir, "food_report.txt"))
 
 food_final_total = 0
 food_amount_dictionary = {}
