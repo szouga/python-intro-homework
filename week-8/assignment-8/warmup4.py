@@ -6,14 +6,12 @@
 
 import requests
 
-with open('requirements.txt', 'r', encoding="utf-16") as file:
-    lines = file.readlines()
-    number_version = 0
-    for i in lines:
-        if "requests" in i:
-            number_version = i.replace("requests==", "")
+# with open('requirements.txt', 'r', encoding="utf-16") as file:
+#     lines = file.readlines()
+#     number_version = 0
+#     for i in lines:
+#         if "requests" in i:
+#             number_version = i.replace("requests==", "")
                     
-    print(f"requests version: {number_version}")
-        
-with open('requirements.txt', 'w', encoding="utf-8") as file:
-    file.write(number_version)
+#     print(f"requests version: {number_version}")
+print(f"requests version: {requests.__version__}")      

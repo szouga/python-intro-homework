@@ -14,8 +14,8 @@ while notnumber:
             print(f"Your number {user_input}")
             break
             
-        user_input = input("Type a number: ")
-        continue
+        # user_input = input("Type a number: ")
+        # continue
 
     except ValueError:
         print("Not a valid answer please type a numerical value. Try again: ")
