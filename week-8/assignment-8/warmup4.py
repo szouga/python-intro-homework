@@ -15,3 +15,5 @@ with open('requirements.txt', 'r', encoding="utf-16") as file:
                     
     print(f"requests version: {number_version}")
         
+with open('requirements.txt', 'w', encoding="utf-8") as file:
+    file.write(number_version)
